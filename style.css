@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+}
+h1,p,h2{
+    text-align: center;
+}
+h1 {
+    
+    color: #333;    /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(40, 27, 227, 0.5); /* Sombra */
+}
+h2 {
+    color: #333; 
+    text-shadow: 2px 2px 4px rgb(255, 5, 5);
+}
+.fondof {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 3px solid #2d06f3;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 100px 4px 8px rgba(13, 6, 140, 0); 
+}
+.fondof1 {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 3px solid #ff0909;
+    border-radius: 10px;
+    background-color: gray;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgb(72, 69, 75);
+    color: aqua;
+    
+  }
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: aqua;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blueviolet;
+}

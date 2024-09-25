@@ -4,81 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulario Yorman</title>
 </head>
 
 <body>
-    <h1>Me conoces bien?</h1>
-    <p>Completa el siguiente formulario para yo descubrir qué tanto me conoces, poniendo a prueba cuánto has llegado a
-        entender sobre mis intereses, habilidades y gustos. Será una buena manera de ver qué tanto has captado sobre mí.
-    </p>
+    <div class="fondomayor">
 
-    <div>
-        <form action="">
-            <div>
+        <div class="fondof">
+            <h1>Me conoces bien?</h1>
+            <p>Completa el siguiente formulario para yo descubrir qué tanto me conoces, poniendo a prueba cuánto has
+                llegado
+                a
+                entender sobre mis intereses, habilidades y gustos. Será una buena manera de ver qué tanto has captado
+                sobre
+                mí.
+            </p>
+
+            <form action="https://formspree.io/f/mgvwjnoa" method="post">
                 <div>
                     <label for="nombre">Nombre completo</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-                <br>
-                <div>
+                    <input type="text" id="nombre" name="nombre de usuario" placeholder="Ingrese su nombre" required>
+
+
+                    <br>
                     <label for="cococes-bien">Qué tanto cree que me conoces?</label>
-                    <select name="cococes-bien" id="cococes-bien">
+                    <select name="cuanto me conoces?" id="cococes-bien" required>
                         <option value="">selecciona una respuesta</option>
                         <option value="mucho">Mucho</option>
                         <option value="poquito">Poquito</option>
                         <option value="voy-ver">Voy a ver</option>
                     </select>
+
                 </div>
-            </div>
-            <div>
-                <h2>FORMULARIO</h2>
+        </div>
+        <div class="fondof1">
+            <h2>FORMULARIO</h2>
+            <p>Este es el formulario que hay que llenar.</p>
 
-                <label for="mi-nombre">¿Cuál es mi nombre completo?</label>
-                <input type="text" id="mi-nombre" name="mi-nombre" placeholder="Ingrese su respuesta" required>
-                <br><br>
-                <label for="naci">¿Donde nací?</label>
-                <input type="text" id="naci" name="naci" placeholder="Ingrese su respuesta" required>
-                <br><br>
-                <label for="años">¿Cuántos años tengo?</label>
-                <select name="años" id="años">
-                    <option value="">Selecciona una repuesta</option>
-                    <option value="45">45</option>
-                    <option value="16">16</option>
-                    <option value="18">18</option>
-                    <option value="50">50</option>
-                </select>
-                <br><br>
-                <label for="mes">¿Cuándo cumplo años?</label>
-                <select name="mes" id="mes">
-                    <option value="">Selecciona una respuesta</option>
-                    <option value="11j">11 de Junio</option>
-                    <option value="20m">20 de Marzo</option>
-                    <option value="26jl">26 de Julio</option>
-                    <option value="13a">13 de Agosto</option>
-                </select>
-                <br><br>
-                <label for="hermanos">¿Cuántos hermanos tengo?</label>
-                <select name="hermanos" id="hermaos">
-                    <option value="">Selecciona una respuesta</option>
-                    <option value="1h">1</option>
-                    <option value="0h">0</option>
-                    <option value="2h">2</option>
-                </select>
-                <br><br>
-                <label for="prima">¿Tengo primos o prima?</label>
-                <select name="prima" id="prima">
-                    <option value="">Selecciona una respuesta</option>
-                    <option value="sipa2">Sí, dos primas</option>
-                    <option value="nop">No tengo ni primas ni primos </option>
-                    <option value="sipo1">Sí, un primo</option>
-                    <option value="sipa1">Sí, una prima</option>
-                    <option value="sipo2">Sí, dos primos</option>
-                </select>
-                
+            <label for="mi-nombre">¿Cuál es mi nombre completo?</label>
+            <input type="text" id="mi-nombre" name="cual es mi nombre" placeholder="Ingrese su respuesta" required>
+            <br><br>
+            <label for="naci">¿Donde nací?</label>
+            <input type="text" id="naci" name="naci" placeholder="Ingrese su respuesta" required>
+            <br><br>
+            <label for="años">¿Cuántos años tengo?</label>
+            <select name="mi edad" id="años" required>
+                <option value="">Selecciona una repuesta</option>
+                <option value="45">45</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="50">50</option>
+            </select>
+            <br><br>
+            <label for="mes">¿Cuándo cumplo años?</label>
+            <select name="cuando cumplo" id="mes" required>
+                <option value="">Selecciona una respuesta</option>
+                <option value="11 de Junio">11 de Junio</option>
+                <option value="20 de Marzo">20 de Marzo</option>
+                <option value="26 de Julio">26 de Julio</option>
+                <option value="13 de Agosto">13 de Agosto</option>
+            </select>
+            <br><br>
+            <label for="hermanos">¿Cuántos hermanos tengo?</label>
+            <select name="cuantos hermanos tengo" id="hermaos" required>
+                <option value="">Selecciona una respuesta</option>
+                <option value="1h">1</option>
+                <option value="0h">0</option>
+                <option value="2h">2</option>
+            </select>
+            <br><br>
+            <label for="prima">¿Tengo primos o prima?</label>
+            <select name="tengo primas/os" id="prima" required>
+                <option value="">Selecciona una respuesta</option>
+                <option value="Sí, dos primas">Sí, dos primas</option>
+                <option value="nop">No tengo ni primas ni primos </option>
+                <option value="Sí, un primo">Sí, un primo</option>
+                <option value="Sí, una prima">Sí, una prima</option>
+                <option value="Sí, dos primos">Sí, dos primos</option>
+                <option value="Sí, una prima y un primo">Sí, una prima y un primo</option>
+            </select>
+            <br><br>
+            <label for="colorf">¿Cuál es mi color favorito?</label>
+            <select name="color favorito" id="colorf" required>
+                <option value="">Selecciona una opcion</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="rojo">Rojo</option>
+                <option value="amarillo">Amarillo</option>
+                <option value="nocolorf">No tengo color favorito</option>
+            </select>
+            <br><br>
+            <label for="perrogato">¿Soy más de perros o de gatos?</label>
+            <input type="text" id="perrogato" name="¿Soy más de perros o de gatos?" placeholder="Ingrese su respuesta"
+                requerido>
+            <br><br>
+            <label for="friocalor">¿Me gusta más el frío o el calor?</label>
+            <input type="text" id="friocalor" name="¿Me gusta más el frío o el calor?"
+                placeholder="Ingrese su respuesta" required>
+            <br><br>
+            <label for="dulcesalada">¿Qué tipo de comida me gusta más: dulce o salada?</label>
+            <input type="text" id="dulcesalada" name="¿Qué tipo de comida me gusta más: dulce o salada?"
+                placeholder="Ingrese su respuesta" required>
+            <br><br>
+            <label for="tempranotarde">¿Soy más de dormir temprano o tarde?</label>
+            <input type="text" id="tempranotarde" name="¿Soy más de dormir temprano o tarde?"
+                placeholder="Ingrese su respuesta" required>
+            <br><br>
+            <label for="llusol">¿Prefiero los días lluviosos o soleados?</label>
+            <input type="text" id="llusol" name="¿Prefiero los días lluviosos o soleados?"
+                placeholder="Ingrese su respuesta" required>
+            <br><br>
+            <label for="opinion">¿Qué le pareció mi página?</label>
+            <textarea name="¿Qué le pareció mi página?" id="opinion" placeholder="Escribe tu opinion"></textarea>
 
-            </div>
+                <button type="submit">Enviar </button>
+            
+
+
+
+
+        </div>
         </form>
+
     </div>
 </body>
 
